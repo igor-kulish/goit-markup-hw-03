@@ -1,0 +1,225 @@
+/* *Стили для index.html */
+:root {
+  --general-text-color: #212121;
+  --accent-colour: #2196f3;
+  --hero-addres-button-text-color: #ffffff;
+  --paragraph-text-color: #757575;
+  --footer-auth-text-color: rgba(255, 255, 255, 0.6);
+  --header-background-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --portfolio-button-background: #f5f4fa;
+}
+
+/* *Общие стили body */
+body {
+  color: var(--paragraph-text-color);
+  background-color: #e5e5e5;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+/* *list-style none - убирает точки в списках */
+.all-lists {
+  list-style: none;
+}
+
+/* *Убирает подчеркивание */
+.link {
+  text-decoration: none;
+}
+
+/* *LOGO */
+.header-logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.header-logo-web {
+  color: var(--accent-colour);
+}
+
+/* *Site nav Header */
+.top-line {
+  background-color: var(--header-background-color);
+}
+
+.site-nav .link {
+  color: var(--general-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .current {
+  color: var(--accent-colour);
+}
+
+.auth-nav .link {
+  color: var(--paragraph-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-colour);
+}
+
+/* *Hero */
+.hero-section {
+  background-color: #2f303a;
+}
+
+/* *Основоной заголовок */
+.hero-title {
+  color: var(--hero-addres-button-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* *Главная кнопка */
+.button-hero {
+  color: var(--hero-addres-button-text-color);
+  background-color: var(--accent-colour);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+}
+
+.button-hero:hover,
+.button-hero:focus,
+.button-hero:active {
+  background-color: var(--hero-addres-button-text-color);
+  color: var(--accent-colour);
+}
+
+/* *Секция Особенности */
+.features-list .title {
+  color: var(--general-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* *Секция Чем мы занимаемся, Наша команда */
+.our-team {
+  background-color: #f5f4fa;
+}
+
+.section-work .title,
+.our-team .title {
+  color: var(--general-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team-list .title-name {
+  color: var(--general-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team-list .job-title {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* *Footer стилизация */
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-logo {
+  color: var(--accent-colour);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-logo-studio {
+  color: var(--hero-addres-button-text-color);
+}
+
+.footer-address {
+  color: var(--hero-addres-button-text-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer-auth .link-footer:hover,
+.footer-auth .link-footer:focus {
+  color: var(--accent-colour);
+}
+
+/* *Portfolio стилизация */
+.section-portfolio .button {
+  color: var(--general-text-color);
+  background-color: var(--portfolio-button-background);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--accent-colour);
+  color: var(--hero-addres-button-text-color);
+}
+
+.portfolio-project-list .title {
+  color: var(--general-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-project-list .text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
