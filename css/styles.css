@@ -13,7 +13,7 @@
 /* *Общие стили body */
 body {
   color: var(--paragraph-text-color);
-  background-color: #e5e5e5;
+  background-color: var(--header-background-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
@@ -210,14 +210,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
-  margin-bottom: 94px;
 }
 
 /* *Секция Чем мы занимаемся, Наша команда */
-.section-work {
-  padding-top: 0;
-}
-
 .section-work-list {
   display: flex;
 }
@@ -257,6 +252,11 @@ img {
   margin-right: 30px;
 }
 
+.box-our-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .our-team-list .title-name {
   color: var(--general-text-color);
   font-weight: 500;
@@ -264,7 +264,6 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -272,12 +271,13 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 30px;
 }
 
 /* *Footer стилизация */
 .footer {
   background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -291,7 +291,6 @@ img {
 
   margin-bottom: 20px;
   display: inline-block;
-  padding-top: 60px;
 }
 
 .footer-logo-studio {
@@ -300,7 +299,6 @@ img {
 
 .footer-main-address {
   display: block;
-  padding-bottom: 60px;
 }
 
 .footer-address {
@@ -329,6 +327,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
+
   display: inline-block;
 }
 
@@ -349,8 +348,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: 1px transparent;
 
@@ -359,9 +356,9 @@ img {
 }
 
 .portfolio-list {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-list .item {
@@ -372,7 +369,12 @@ img {
   margin-right: 0;
 }
 
-.button:hover,
+.button:hover {
+  background-color: var(--accent-colour);
+  color: var(--hero-addres-button-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .button:focus,
 .button:active {
   background-color: var(--accent-colour);
@@ -393,6 +395,7 @@ img {
 
 .card-title-text {
   border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .card-portfolio:nth-child(3n) {
@@ -410,9 +413,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
   margin-bottom: 4px;
 }
 
@@ -420,7 +420,4 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
 }
