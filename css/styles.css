@@ -18,7 +18,7 @@ body {
   font-size: 14px;
 }
 
-/* *Общие стили р, h2, h3 */
+/* *Общие стили р, h1-h6 */
 p,
 h1,
 h2,
@@ -192,7 +192,11 @@ img {
   display: flex;
 }
 
-.features-list li:not(:last-child) {
+.features-list .list {
+  width: 270px;
+}
+
+.features-list .list:not(:last-child) {
   margin-right: 30px;
 }
 
